@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap');
+
+border-radius()
+  -webkit-border-radius: arguments
+  -moz-border-radius: arguments
+  border-radius: arguments
+
+
+body
+  min-height 100vh
+  display flex
+  align-items center
+  background #EDEEF0
+  justify-content center
+  font-family 'Eczar', serif
+  overflow hidden
+  
+.walkman
+  position relative
+  width  259px
+  height 418px
+  border-radius (5px)
+  background linear-gradient(#497496, #44607B)
+  box-shadow 0 -3px 2px -0.5px #6D90B6  inset, //btm and sides
+        3px 0 5px 2px #6A88AC inset, //left and top
+        0 4.5px 3px #A6D3F9 inset, //top
+        0 30px 20px -5px rgba(0,0,0,0.1),
+        0 65px 50px -10px rgba(0,0,0,0.05);
+
+.sony
+  font-family 'Eczar', serif
+  font-size 30px
+  letter-spacing 3px
+  transform scale(1.2, 0.8)
+  transform-origin top
+  display block
+  position absolute
+  height 80%
+  left 50px
+  top 65px
+  background -webkit-linear-gradient(-10deg, #BACDD7 20%, #FFFFF9 50%, #BACDD7 60%)
+  -webkit-background-clip text
+  -webkit-text-fill-color transparent
+  filter drop-shadow(2px 2px #49647B)
+  
+  
+borderWidth = 4.5px
+walkmanlogo-color = #CDDBE2
+  
+.walkman-name-logo
+    position absolute
+    bottom 30px
+    left 32px
+    display flex
+    
+    gap 2px
+    
+    transform scale(0.8)
+    filter drop-shadow(2px 2px #49647B)
+
+    .walkman-name-logo-w
+      display flex
+      div:last-child
+          margin-left - borderWidth px
+        
+      .walkman-name-logo-w1
+         width 6px
+         height 20px
+         border solid walkmanlogo-color
+         border-width 0px borderWidth borderWidth borderWidth 
+         border-radius 0 0 100% 100%
+      
+    .walkman-name-logo-a
+      .walkman-name-logo-a1
+         width 10px
+         height 20px
+         border solid walkmanlogo-color
+         border-width borderWidth borderWidth 0px borderWidth 
+         border-radius 100% 100% 0 0 
+      .walkman-name-logo-a-circle
+         position absolute
+         top 8px
+         margin-left 5.2px
+         width 8px
+         height 8px
+         border-radius (50%)
+         background walkmanlogo-color
+         
+        
+     .walkman-name-logo-l
+         width 10px
+         height 20px
+         border solid walkmanlogo-color
+         border-width 0  0 borderWidth borderWidth  
+         border-radius 0 0 0 5px 
+        
+    .walkman-name-logo-k
+      .walkman-name-logo-k-rect
+         width 10px
+         height 25px
+         border solid walkmanlogo-color
+         border-width 0  0 0 borderWidth+1px   
+
+        
+      .walkman-name-logo-k1
+         position absolute
+         top 0px
+         margin-left 1px
+         width 10px
+         height 10px
+         border solid walkmanlogo-color
+         border-width 0  borderWidth borderWidth 0 
+         border-radius  0 0 80% 0 
+         
+      .walkman-name-logo-k2
+         position absolute
+         top 10px
+         margin-left 1px
+         width 10px
+         height 10px
+         border solid walkmanlogo-color
+         border-width borderWidth  borderWidth  0  0 
+         border-radius  0 80% 0  0 
+         
+         
+    .m-rotate
+      transform rotate(180deg)
+
+
+  
+  
+  
+  
+  
+  
+.arrow-box
+  position absolute
+  right 80px
+  top 227px
+  transform-style preserve-3d
+  .arrow-rect
+    width 6px
+    height 25px
+    border solid #ADBCCE
+    border-width 0px 3px 3px 3px 
+    filter drop-shadow(2px 2px #49647B)
+  .arrow-tri
+    position absolute
+    right 5px
+    top -26px
+    width 6px
+    height 25px
+    border solid #ADBCCE
+    border-width 0px 0px 3px 3px 
+    transform skew(-20deg)
+    
+   .tri-otherside
+    right -1px
+    border solid #ADBCCE
+    border-width 0px 3px 3px 0px 
+    transform skew(20deg)
+    filter drop-shadow(2px 2px #49647B)  
+
+       
+
+.circle
+  position absolute
+  top 250px
+  right 35px
+  width 10px
+  height 10px
+  border-radius 50%
+  background #C7D6D8
+  box-shadow 0px -1px 1px 0px #403833  inset, //btm and sides 
+    1px 1px 1px 0px #9F8C79  inset
+  
+.right-btn
+  z-index -1
+  position absolute
+  top 50px
+  right -10px
+  width 15px
+  height 70px
+  border-radius (3px)
+  
+  background linear-gradient(90deg, #7D949D, #96ABB5 )
+  box-shadow -1px -1px 0px 1px #CAD5DA inset, //btm and sides
+        0 3px 1px #CAD5DA inset, //top
+        0 30px 20px -5px rgba(0,0,0,0.1),
+        0 65px 50px -10px rgba(0,0,0,0.05)
+   
+.orange-btn
+  z-index -1
+  position absolute
+  top -10px
+  left 70px
+  width 32px
+  height 30px
+  border-radius (3px)
+  background linear-gradient(#E2B380, #DEA970 )
+  box-shadow -1px -1px 0px 1px #E1AA56 inset, //btm and sides
+        0 3px 1px #E1AA56 inset,
+        0 30px 20px -5px rgba(0,0,0,0.1),
+        0 65px 50px -10px rgba(0,0,0,0.05)
+       
+.walkman-right-side
+  display block
+  position absolute
+  right 0
+  width  50px
+  height 418px
+  border-radius (0 5px 5px 0)
+  opacity 0.75
+  background linear-gradient(#BED2DD, #A8B3BE)
+  box-shadow -2.5px -3px 4px 2px #A4BAD8  inset, //btm and sides
+        0 3px 1px #D9DCF1 inset; //top
+ 
+.walkman-shadow-line
+  display block
+  position absolute
+  opacity 1
+  left 0
+  top 60px
+  width  208px
+  height 6px
+  background linear-gradient(#4F6C88, #0E1B33, #6D90B6 80%)
+  
+  
+.walkman-window
+  display block
+  position absolute
+  opacity 0.8
+  left 53px
+  top 120px
+  width  83px
+  height 217px
+  border-radius (5px)
+  border 1px solid #2A4B64
+  background #0F1210
+  
+
+  
+.walkman-window-frame
+  position absolute
+  width  83px - 10px
+  height 217px - 10px
+  left 5px
+  top 5px
+  opacity 0.8
+  border-radius (5px)
+  background-color transparent
+  box-shadow 1px -2px 4px 2px #1D201E  inset, //btm and sides
+        3px 0 6px 2px #262C2D inset, //left and top
+        0 3px 1px #6C7D85 inset; //top
+  
+.walkman-window-dots
+  position absolute
+  width  83px - 10px
+  height 217px - 10px
+  left 5px
+  top 5px
+  opacity 0.5
+  border-radius (5px)
+  background-image: radial-gradient(#232625 40%, transparent 60%)
+  background-size: 5px 5px
+  
+.walkman-window-inner-window
+  position absolute
+  width  83px - 30px
+  height 217px - 130px
+  left 15px
+  top 65px
+  opacity 0.9
+  border-radius (5px)
+  background-color #C7D6D8
+  box-shadow 1px -2px 5px 2px #6C7D85  inset //btm and sides
+  
+  
+.walkman-window-cassette
+
+  position absolute
+  width  30px
+  height 30px
+  left 26px
+  top 20px
+  border-radius (50%)
+  background-color #73695C
+  box-shadow 0px -2.5px 1px 0px #403833  inset, //btm and sides 
+    2px 3px 1px 0px #9F8C79  inset
+  
+  .walkman-window-cassette-box
+    
+    width  30px
+    height 30px
+    left 26px
+    top 20px
+    border-radius (50%)
+    background-color transparent
+    
+    transform-origin center
+    animation playing 5s linear infinite
+  
+
+  
+.btm
+  top 165px
+  
+.walkman-window-cassette-center
+  position absolute
+  width  30px - 8px
+  height 30px - 8px
+  left 4px
+  top 4px 
+  border-radius (50%)
+  background-color #1F2023
+  
+.walkman-window-cassette-center-inner
+  position absolute
+  width  30px - 14px
+  height 30px - 14px
+  left 3px
+  top 3px 
+  border-radius (50%)
+  background-color #2E3339
+
+      
+        
+.walkman-window-cassette-center-inner-lines
+  position absolute
+  width  7px
+  height 2px
+  left 11px
+  top 9px
+  background-color #A0B6BF
+  transform-origin left
+
+for row in 1 2 3 4
+  .walkman-window-cassette-center-inner-lines:nth-child({row})
+    transform rotate(120deg * row) 
+  
+.walkman-window-cassette-center-inner-black
+  position absolute
+  width  8px
+  height 4px
+  left 13px
+  top 6px
+  margin-top 5px
+  border-radius (50%)
+  background-color #363E3E
+  transform-origin left
+  transform rotate(45deg)
+
+.right-top
+  width  12px
+  left 12px
+  top 0px
+  transform rotate(-45deg)
+  
+.left-top
+  width  12px
+  left 7px
+  top 2px
+  transform rotate(180deg)
+
+@keyframes playing 
+
+  100% 
+    transform rotate(360deg)
